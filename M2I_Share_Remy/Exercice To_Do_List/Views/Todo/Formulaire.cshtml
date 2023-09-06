@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Ajouter une tâche";
+}
+
+@model Todo
+
+
+<div class="text-center">
+    <h2 class="display-4">Ajouter une tâche à la liste</h2>
+</div>
+
+<form asp-action="ValiderFormulaire">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" type="text" class="form-control" placeholder="Nom de la tâche">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" type="text" class="form-control" placeholder="Description de la tâche">
+    </div>
+    <button type="submit" class="btn btn-dark">Valider</button>
+</form>
