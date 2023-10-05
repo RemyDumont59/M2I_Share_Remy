@@ -4,22 +4,20 @@
              x:Class="Quiz.Views.Q11"
              Title="Bravo">
 
-    <Grid Padding="20" RowSpacing="5" ColumnSpacing="5"
-       RowDefinitions="2*,*"
-       ColumnDefinitions="*"
+    <Grid Padding="20" RowSpacing="10"
+       RowDefinitions="3*,2*"
        BackgroundColor="LightGoldenrodYellow">
 
         <Image
                 Source="bravo.jpg"
                 SemanticProperties.Description="bravo"
-                HeightRequest="500"
-                WidthRequest="500"
+                WidthRequest="400"
+                VerticalOptions="End"
                 HorizontalOptions="Center"
-                Grid.Row="0"
                 Grid.ColumnSpan="2"
                 />
 
-        <Button Text="Retour à la page d'accueil" TextColor="Black" FontAttributes="Bold" FontSize="22" Grid.Row="1" CornerRadius="50" BackgroundColor="YellowGreen"
+        <Button Text="Retour à la page d'accueil" TextColor="Black" FontAttributes="Bold" FontSize="20" Grid.Row="1" CornerRadius="50" BorderColor="Black" BorderWidth="1" BackgroundColor="YellowGreen" VerticalOptions="Start"
                 Clicked="Loose"/>
 
     </Grid>
